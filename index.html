@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Super Car Drive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="done()">
+    <div id="scoreDiv">
+        <span id="score">0</span>
+        <img src="./imgs/coin.png" id="cn">
+    </div>
+
+    <div class="gameHome" id="startPage">
+        <div id="gameTitle">3D Car Drive</div>
+        <button onclick="ld()" id="playBtn">
+            <span style="font-size:18px">
+                Loading Assets<br>
+                Please Wait...<br>
+                This may take a few seconds for first time
+            </span>
+        </button>
+        <br>
+        <div id="ldc">
+            <div id="loading"></div>
+        </div>
+    </div>
+
+
+    <div id="mainContainer" style="background:#0f0">
+        <img id="city" src="./imgs/cty.jpg">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <img class="aImg" id="t1" src="./imgs/t1.png">
+    <img class="aImg" id="t2" src="./imgs/t2.png">
+    <img class="aImg" id="t3" src="./imgs/t5.png">
+    <img class="aImg" id="t4" src="./imgs/t4.png">
+    <img class="aImg" id="c1" src="./imgs/c2.png">
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
